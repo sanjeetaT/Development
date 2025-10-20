@@ -6,23 +6,34 @@
     <title>01 - Form</title>
     <link rel="stylesheet" href="../_styles/styles.css" />
   </head>
+  <main>
   <body>
     <h1>01 - Form</h1>
     <form action="/submit">
-      <span>Name</span>
-      <input type="text" />
+      <!--<span>Name</span> -->
+      <label for="name">Name</label>
+      <input type="text" id="name" />
       <br /><br />
       <label>
         Email
-        <input type="text" />
+        <input type="email" />
       </label>
       <br /><br />
-      <span>Favorite Character</span>
-      <div><input type="radio" id="spongebob" />Spongebob</div>
-      <div><input type="radio" id="patrick" />Patrick</div>
-      <div><input type="radio" id="sandy" />Sandy</div>
+      <fieldset>
+       <legend>Favorite Character</legend>
+       <input type="radio" name="charector" id="spongebob" />
+       <label for="spongebob">Spongebob</label>
       <br />
-      <button>Submit</button>
+      <input type="radio" name="charector" id="patrick" />
+      <lebal for="patrick">Patrick</lebal>
+      <br />
+      <input type="radio"name="charector" id="sandy" />
+      <lebal for="sandy">Sandy</lebal> 
+      
+      </fieldset>
+      <br />
+      <input type="submit" value="submit">
     </form>
+    </main>
   </body>
 </html>
