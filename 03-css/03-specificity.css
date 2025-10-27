@@ -1,25 +1,27 @@
 /* Specificity Exercise */
 
+
+/* the element with list item class and two element selector the nav and a so, selector specificity is 0,1,2 */
 nav .list-item > a {
   color: var(--purple);
 }
-
+/*  # is indicated an ID colon colon indicated pseudo element so selector specificity is 1,0,1 */
 #main::first-letter {
   color: var(--purple);
 }
-
+/* enput is element and square bracket is atribute of Y index so, selector specificity is  0,1,1 */
 input[type] {
   color: var(--purple);
 }
-
+/*  section is element and first line going to be psuedo element and .main is class so, selector specificity is 0,1,2*/
 section .main::first-line {
   color: var(--purple);
 }
-
+/* # is id so index X. There are four element nav, ul, li and a are index Z. we have menu is class and not is psuedo class. Square bracket indicated atribut it is Y index so, selector specificity is 1,2,4  */
 nav ul.menu li#first a:not([class='visited']) {
   color: var(--purple);
 }
-
+/* we have  ten selectors. so, selector specificity is 0,0,10*/
 div ol li ul li ol li ul li a {
   color: var(--purple);
 }

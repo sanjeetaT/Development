@@ -28,6 +28,7 @@ Recreate the snapshot below using pseudo elements.
 Calculate the specificity of the rules below. Write your answers as comments below each selector.
 
 ```css
+/* */
 nav .list-item > a {
 }
 
